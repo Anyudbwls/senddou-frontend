@@ -1,0 +1,46 @@
+.react-grid-layout {
+    position: relative;
+}
+
+/*공유파트 검색창 설정*/
+#inputID::placeholder {
+    color: black;
+    font-size: larger;
+    opacity: 1;
+}
+
+.imgbox3 /*캐로셀 큰 사진*/
+{
+    position    : relative;
+    z-index     : 2;
+    width       : 300px;
+    height      : 400px;
+    top: -5px;
+    border-radius: 22px;
+    margin-bottom: 10px;
+    padding: 10px 0px 0px 10px;
+    background  : gray;
+}
+
+.imgbox4 /*밑에 그림자 설정*/
+{
+    position    : relative;
+    z-index     : 5;
+    top: 60px;
+    border-radius: 33px;
+    -webkit-box-shadow: 75px 0px 0px  rgba(255,192,203,1);
+    background  : gray;
+}
+
+.modal01 /*모달*/
+{
+    position    : relative;
+    z-index     : 2;
+    width       : 400px;
+    height      : 600px;
+    border-radius: 22px;
+}
+
+
+
+

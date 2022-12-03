@@ -1,0 +1,223 @@
+/* index.css 또는 루트 파일에 포함되는 css 파일 */
+/* 특이하게도 @import 가 아닌 @tailwind 키워드로 모듈을 불러옵니다! */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  .max-width-450 {
+    max-width: 450px;
+  }
+
+  .max-width-630 {
+    max-width: 630px;
+  }
+}
+@layer components{
+  html, body {
+
+    margin
+    : 0;
+
+    padding
+    : 0;
+  }
+  .background {
+
+    position
+    :
+            absolute
+  ;
+
+    display
+    :
+            block
+  ;
+
+    top
+    : 0;
+
+    left
+    : 0;
+
+    z-index
+    : -10;
+  }
+  .style {
+  backgroundImage: "url(" + "/Group 188.png" + ")";
+  backgroundPosition: 'center';
+  backgroundSize: 'cover';
+  backgroundRepeat: 'no-repeat'
+}
+  .naver{
+    background-color:#03C75A ;
+    width: 23rem;
+    border-radius: 12px;
+    height: 14px;
+  }
+  .kakao{
+    width: 23rem;
+  }
+  .googleimg{
+    border-radius: 50px;
+
+  }
+  .google{
+    width: 23rem;
+    border-radius: 12px;
+    height: 14px;
+    background-color:#ffff ;
+    drop-shadow: 0 10px 8px rgb(0 0 0 / 0.04);
+  }
+  .text{
+    font-size: 13pt;
+  }
+  .bg{
+    background: linear-gradient( to bottom, #070707,rgba(6,3,36,0.81), rgba(29, 14, 89, 0.78));
+  }
+
+  .bg-ver2{
+    background: linear-gradient(to top,rgba(38,0,32,0.81),rgba(53,42,93,0.92) );
+  }
+  .header{
+    background: rgba(53,42,93,0.92);
+  }
+  .home-bg{
+    background: linear-gradient(to bottom,rgba(7, 7, 7, 1),rgba(6, 3, 36, 0.81),rgba(15, 6, 44, 0.77));
+  }
+  .boxline{
+    border-color: #4383CF;
+  }
+  .button{
+    background-color: #51C5B7;
+  }
+  .textlight{
+    color:#2BEED7;
+  }
+  .shadow{
+    box-shadow: inset 0px 2px 4px rgba(0,0,0,0.52);
+  }
+  .line-one{
+    position: absolute;
+    width: 1500.32px;
+    height: 0px;
+    left: 10px;
+    top: 230px;
+    border-style:hidden;
+    border-top: none;
+    border-bottom: 4px solid #76CEFF;
+    transform: rotate(-6.43deg)
+  }
+  .line-two{
+    position: absolute;
+    width: 1020px;
+    height: 0px;
+    left: 500px;
+    top: 770px;
+
+    border-top: none;
+    border-bottom: 4px solid #ffff;
+    transform: rotate(-10.79deg);
+
+  }
+  .line-three{
+    position: absolute;
+    width: 438.09px;
+    height: 0px;
+    left: 620.26px;
+    top: 432.94px;
+    border-collapse: collapse;
+    border-style:none;
+    border-top: none;
+    border-bottom: 4px solid #8976FF;
+    transform: rotate(64.59deg);
+
+  }
+  .line-four{
+    position: absolute;
+    width: 65.94px;
+    height: 0px;
+    left: 960.26px;
+    top: 740px;
+    border-collapse: collapse;
+    border-style:none;
+    border-top: none;
+    border-bottom: 4px solid #8976FF;
+    transform: rotate(64.59deg);
+
+  }
+  .myfont {
+    font-weight: bold;
+  }
+  .mybox-bg-one {
+    background-color: #8994bb;
+  }
+
+  li {
+    margin-bottom: 20px;
+  }
+  .bgc{
+    background-color: #0F062C;
+    opacity: 77%;
+  }
+  .modal-login-one{
+    background-color: #8994BB;
+  }
+  .chOne{
+    background-color: #877198;
+    z-index: 2;
+  }
+  .chTwo{
+    background-color: #B8B8B8;
+    z-index: 2;
+  }
+  .roundOne {
+    background-color: #f5c0c0;
+    box-shadow: inset 2px 5px 4px #AA7E7E;
+  }
+  .roundTwo {
+    background-color: #f09d9d;
+    box-shadow: inset 2px 5px 4px #9F6565;
+  }
+  .roundThree {
+    background-color: #feb2e9;
+    box-shadow: inset 6px 5px 4px #B17DA3;
+  }
+  .roundFour{
+    background-color: rgba(231, 217, 255, 0.79);
+    box-shadow: inset 4px 5px 4px #9889AF;
+  }
+  .bgRound1{
+    background: linear-gradient(to bottom, rgba(97, 76, 100, 1), rgba(107, 57, 115, 0.56),rgba(96,76,100,0));
+    border-radius: 50%;
+    width: 950px;
+    height: 1000px;
+    z-index: 3;
+
+
+  }
+  .bgRound2{
+    background:linear-gradient(to bottom, rgba(146, 139, 147, 1),rgba(97, 76, 100, 0.5156),rgba(96,76,100,0));
+    border-radius: 50%;
+    width: 850px;
+    height: 900px;
+    z-index: 3;
+
+
+  }
+  img{
+    z-index: 3;
+  }
+}
+
+
